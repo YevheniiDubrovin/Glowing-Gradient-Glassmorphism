@@ -109,6 +109,7 @@ body {
     border-radius: 8px;
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
     opacity: 0;
     transition: .5s;
     animation: animate 2s ease-in-out infinite;
@@ -131,6 +132,7 @@ body {
     border-radius: 8px;
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
     opacity: 0;
     transition: .5s;
     animation: animate 2s ease-in-out infinite;
@@ -163,22 +165,13 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .01) ;
     border-radius: 8px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
     left: 0;
     transition: .5s;
 
 } 
 
-@media (max-width: 720px){
-    .box .content {
-        backdrop-filter: blur(15px);
-    }
-    .box span::after {
-        backdrop-filter: blur(15px);
-    }
-    .box span::before {
-        backdrop-filter: blur(15px);
-    }
-}
+
 .box:hover .content {
     left: -25px;
     padding: 60px 40px;
@@ -206,3 +199,5 @@ body {
     margin-top: 5px;
 
 }
+
+
